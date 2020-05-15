@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  /* color */
+  --bg-color: #40444f;
+  --blue-color: #3f86c1;
+  --yellow-color: #fabd2c;
+  --pink-color: #fc7f84;
+  --white-color: #fffeff;
+  /* font size */
+  --font-medium: 15px;
+  --font-small: 13px;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+/* Home Icon */
+.homeIcon {
+  text-align: center;
+  padding: 40px;
+}
+/* Clothes Selector */
+.categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clothesBtn {
+  border: none;
+  background-color: var(--bg-color);
+  margin-right: 10px;
+}
+
+.clothesBtn img {
+  width: 80px;
+}
+
+.colorBtn {
+  width: 80px;
+  height: 50px;
+  border-radius: 20px;
+  border: none;
+  font-size: var(--font-medium);
+  margin-right: 20px;
+}
+
+.colorBtn#blueBtn {
+  background: var(--blue-color);
+}
+
+.colorBtn#yellowBtn {
+  background-color: var(--yellow-color);
+}
+
+.colorBtn#pinkBtn {
+  background-color: var(--pink-color);
+}
+
+.clothesBtn:focus,
+.colorBtn:focus {
+  outline: 0;
+  cursor: pointer;
+}
+
+/* Clothes Outcome */
+
+.clothes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#clothesOutcomeList {
+  width: 60vw;
+  height: 550px;
+  overflow: scroll;
+}
+
+.clothes_outcome {
+  display: flex;
+  align-items: center;
+  background-color: var(--white-color);
+  width: 80vw;
+  font-size: var(--font-medium);
+  margin-bottom: 10px;
+}
+
+.pink_s {
+  width: 80px;
+  margin: 5px 20px 5px 10px;
+}
+
+@media screen and (min-width: 1000px) {
+  .clothesOutcomeList {
+    width: 40vw;
+  }
+}
