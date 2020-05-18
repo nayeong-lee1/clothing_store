@@ -21,6 +21,16 @@ body {
   background-color: var(--bg-color);
 }
 /* Home Icon */
+#homeBtn {
+  border: none;
+  background-color: var(--bg-color);
+}
+
+#homeBtn:focus {
+  outline: none;
+  cursor: pointer;
+}
+
 .homeIcon {
   text-align: center;
   padding: 40px;
@@ -92,11 +102,16 @@ body {
   margin-bottom: 10px;
 }
 
-.pink_s {
+.pink_s,
+.pink_t,
+.pink_p {
   width: 80px;
   margin: 5px 20px 5px 10px;
 }
 
+.hidden {
+  display: none;
+}
 @media screen and (min-width: 1000px) {
   .clothesOutcomeList {
     width: 40vw;

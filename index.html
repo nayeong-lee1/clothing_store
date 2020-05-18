@@ -9,11 +9,11 @@
   <body>
     <!-- Home Icon -->
     <section class="homeIcon">
-      <img src="style/imgs/logo.png" alt="" />
+      <button id="homeBtn"><img src="style/imgs/logo.png" alt="" /></button>
     </section>
     <!-- Clothes Selectors -->
     <section class="categories">
-      <button class="clothesBtn" id="shirtsBtn">
+      <button class="clothesBtn" id="tshirtsBtn">
         <img src="style/imgs/blue_t.png" alt="" />
       </button>
       <button class="clothesBtn" id="pantsBtn">
@@ -29,12 +29,18 @@
     <!-- Clothes Outcome -->
     <section class="clothes">
       <div id="clothesOutcomeList">
-        <li class="clothes_outcome">
-          <img class="pink_s" src="style/imgs/pink_s.png" alt="" />female, large
-          size
+        <li class="clothes_outcome pink skirt female small">
+          <img src="style/imgs/pink_s.png" alt="" />female, small size
+        </li>
+        <li class="clothes_outcome pink pants female large">
+          <img src="style/imgs/pink_p.png" alt="" />female, large size
+        </li>
+        <li class="clothes_outcome pink tshirt female small">
+          <img src="style/imgs/pink_t.png" alt="" />female, small size
         </li>
       </div>
     </section>
-    <script src="app.js"></script>
+    <script src="creatingClothes.js"></script>
+    <script src="showClothesKinds.js"></script>
   </body>
 </html>
